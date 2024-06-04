@@ -3,6 +3,11 @@
 
 Este é um projeto de IA desenvolvido como parte de um trabalho de estatística. A IA utiliza Flask como framework web e Pandas para manipulação de dados. O objetivo é recomendar estilos de música com base em parâmetros fornecidos pelo usuário, como ritmo
 
+## :wrench: Tecnologias utilizadas
+
+![Flask](https://img.shields.io/badge/Flask-092E20?style=for-the-badge&logo=flask&logoColor=0175C2)&nbsp;<br>
+![Python](https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=0175C2)&nbsp;<br>
+![Pandas](https://img.shields.io/badge/Pandas-092E20?style=for-the-badge&logo=pandas&logoColor=0175C2)&nbsp;<br>
 
 ## Pré-requisitos
 Python 
