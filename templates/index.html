@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}" />
+    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/wordcloud.js"></script>
+    <title>SpotIA</title>
+  </head>
+  <body>
+    <header>
+        <img src="{{ url_for('static', filename='img/spotify.webp')}}" alt="">
+        <div id="nav">
+        <a href="#sobre">Inicio</a>
+        <a href="#chartsdiv">Grafico</a>
+        <a href="#footer">Sobre</a>
+    </div>
+    </header>
+    <section id="sobre">
+        <p>Essa projeto foi feito com a intencao de trabalhar com analise, limpeza e treinamento de
+            dados e requisicoes feita em Flask, classificando e demonstrando os dados coletados do Spotify,
+            como nome, tipo de musicas, armonias e colocacoes em podio da plataforma. Com trabalho em
+            completo com IA e Back-end podemos fazer uma logica de requisicao para podermos prever o tipo
+            de musica que o usuario  gosta inserindo algusn dados.
+        </p>
+    </section>
+    <div class="position">
+      <form id="previsao-form">
+        <div>
+          <label for="dancabilidade">Dancabilidade</label>
+          <input
+            id="dancabilidade"
+            name="dançabilidade"
+            type="number"
+            step="0.01"
+            required />
+        </div>
+        <div>
+          <label for="energia">Energia</label>
+          <input
+            id="energia"
+            name="energia"
+            type="number"
+            step="0.01"
+            required />
+        </div>
+        <div>
+          <label for="vivacidade">Vivacidade</label>
+          <input
+            id="vivacidade"
+            name="vivacidade"
+            type="number"
+            step="0.01"
+            required />
+        </div>
+        <div>
+          <label for="volume">Volume</label>
+          <input id="volume" name="volume" type="number" step="0.01" required />
+        </div>
+        <div>
+          <label for="modo_audio">Modo de Áudio</label>
+          <input
+            id="modo_audio"
+            name="modo_audio"
+            type="number"
+            step="0.01"
+            required />
+        </div>
+        <div>
+          <label for="fala">Fala</label>
+          <input id="fala" name="fala" type="number" step="0.01" required />
+        </div>
+        <div>
+          <label for="ritmo">Ritmo</label>
+          <input id="ritmo" name="ritmo" type="number" step="0.01" required />
+        </div>
+        <div>
+          <label for="assinatura_tempo">Assinatura de Tempo</label>
+          <input
+            id="assinatura_tempo"
+            name="assinatura_tempo"
+            type="number"
+            step="0.01"
+            required />
+        </div>
+        <div>
+          <label for="valencia_audio">Valência do Áudio</label>
+          <input
+            id="valencia_audio"
+            name="valencia_audio"
+            type="number"
+            step="0.01"
+            required />
+        </div>
+        <p id="text">
+          O modo de música que você gosta é: <span id="resultado"></span>
+        </p>
+        <button type="submit">Prever</button>
+      </form>
+      <h3>
+        DIGITE VALORES ENTRE 0.0 E 1, SENDO 0.0 PARA NÃO GOSTAR E 1 PARA GOSTAR
+        MUITO (VOCÊ PODE COLOCAR - 0.1 , 0.2, 0.5 E EM DIANTE)
+      </h3>
+    </div>
+    <div class="position">
+      <h3>
+        Graficos mostrandos a quantidade de musicas que se classifica como rapida
+        ou lenta na base
+      </h3>
+      <div id="chartsdiv"></div>
+    </div>
+    <div class="position">
+      <div id="chartpizza"></div>
+      <h3>
+        Distribuicao de valores de 0 a 11 classificando as tonalidades musicais de cada
+        musicais
+      </h3>
+    </div>
+    <footer id="footer">
+        <div>
+            <h3 style="font-weight: 600; margin: 0;">ALUNOS:</h3>
+            <h4>Juan Vinicius</h4>
+            <h4>Giovana Midonz</h4>
+            <h4>Matheus Reis</h4>
+            <h4>Felipe Perrelli</h4>
+        </div>
+        <div>
+            <a href="https://github.com/nauj5051">nauj5051</a>
+            <a href="https://github.com/giovannamidonz">giovannamidonz</a>
+            <a href="https://github.com/Frouzin">Frouzin</a>
+            <a href="https://github.com/Felipe-Perrelli">Felipe-Perrelli</a>
+        </div>
+    </footer>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>

@@ -1,0 +1,141 @@
+html, body{
+    margin: 3em 3em 0 3em;
+    padding: 0;
+    gap: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #1ED760;
+    scroll-behavior: smooth;
+}
+a{
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+}
+header{
+    z-index: 99;
+    display: flex;
+    position: fixed;
+    top: 0;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    padding: 0.5em 6em 0.5em 6em;
+    background-color: #000;
+}
+#nav{
+    display: flex;
+    gap: 8em;
+    justify-content: space-around;
+}
+img{
+    width: 3em;
+}
+form{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.1em;
+    font-weight: 600;
+    color: #000;
+    font-size: 1.2em;
+
+    padding: 1em;
+    border-radius: 1em;
+    background-color: #fff;
+}
+input{
+    width: 3em;
+    text-align: center;
+    font-weight: 600;
+    border: none;
+    color: #fff;
+    background-color: #000;
+}
+input:focus{
+    outline: none;
+}
+input::-webkit-inner-spin-button, 
+input::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+form div{
+    display: flex;
+    justify-content: space-between;
+}
+button{
+    width: 50%;
+    padding: 1em 0.5em;
+    border: none;
+    border-radius: 0.2em;
+    align-self: center;
+    cursor: pointer;
+    color: #fff;
+    background-color: #000;
+}
+#chartsdiv{
+    width: 45%;
+    height: 300px;
+    padding: 1em;
+    border-radius: 1em;
+    background-color: #fff;
+}
+#chartpizza{
+    width: 45%;
+    height: 300px;
+    padding: 1em;
+    border-radius: 1em;
+    background-color: #fff;
+}
+h3{
+    width: 40%;
+    color: #fff;
+}
+.position{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.am5-layer-0{
+    margin-left: -0.8em;
+    margin-top: -0.8em;
+}
+#sobre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#sobre p{
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #fff;
+    text-align: justify;
+    border-radius: 1em;
+    line-height: 1.2em;
+    padding: 1em;
+    width: 90%;
+    background-color: #000;
+}
+footer{
+    z-index: 99;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: end;
+    padding: 1.5em 6em 3em 6em;
+    background-color: #000;
+}
+h4{
+    color: #fff;
+    margin: 0;
+}
+footer div{
+    display: flex;
+    gap: 0.8em;
+    flex-direction: column;
+}
